@@ -1,0 +1,74 @@
+
+.container{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr /**/ 40px 1fr /**/ 40px 1fr /**/ 40px 1fr /**/ 1fr;
+    grid-gap: 1px;
+    grid-template-areas:
+        "header header header"
+
+        "bubbleSortInfo insertionSortInfo quickSortInfo"
+        "bubbleSort insertionSort quickSort"
+        "countingSortInfo radixSortInfo bucketSortInfo"
+        "countingSort radixSort bucketSort"
+        "heapSortInfo shellSortInfo none"
+        "heapSort shellSort none"
+        
+        "footer footer footer"
+}
+.cls-grid-sort-info{
+    color: none;
+    border-radius: 1px;
+    border: 1px solid black;
+    font-size: 25px;
+    font-weight: bold;
+}
+.cls-grid-sort{
+    color: none;
+    border-radius: 1px;
+    border: 1px solid black;
+    font-size: 25px;
+    font-weight: bold;
+}
+.header{
+    background-color: blue;
+    grid-area:header;
+}
+.bubbleSort{
+    background-color: white;
+    grid-area:bubbleSort;
+}
+.insertionSort{
+    background-color: white;
+    grid-area:insertionSort;
+}
+.quickSort{
+    background-color: white;
+    grid-area:quickSort;
+}
+.countingSort{
+    background-color: white;
+    grid-area:countingSort;
+}
+.radixSort{
+    background-color: white;
+    grid-area:radixSort;
+}
+.bucketSort{
+    background-color: white;
+    grid-area:bucketSort;
+}
+.heapSort{
+    background-color: white;
+    grid-area:heapSort
+}
+.shellSort{
+    background-color: white;
+    grid-area:shellSort
+}
+.footer{
+    background-color: orange;
+    grid-area:footer;
+}
