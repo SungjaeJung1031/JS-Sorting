@@ -49,6 +49,7 @@ class Column{
         ctx.ellipse(this.x,top,
             this.width/2,this.width/4,0,
             0,Math.PI*2,true);
+        ctx.closePath();
         ctx.fill();
         ctx.stroke();
         //////////////////////////////////

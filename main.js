@@ -1,13 +1,14 @@
 const n = 20;
 const margin = 10;
 const array = [];
+
 for (let i = 0; i < n; i++) {
     array[i] = Math.random();
 }
 // console.log(array)
 
 const cols = [];
-const canvasBubbleSort = document.getElementsByClassName("bubbleSort")[0];
+const canvasBubbleSort = document.getElementById("bubbleSort");
 const spacing = (canvasBubbleSort.width-margin*2) / n;
 const ctxBubbleSort = canvasBubbleSort.getContext("2d");
 
@@ -36,7 +37,7 @@ let moves = bubbleSort(array);
 animate();
 
 function animate(){
-    ctxBubbleSort.clearRect(0,0,canvasBubbleSort.width, canvasBubbleSort.hegiht);
+    ctxBubbleSort.clearRect(0,0,canvasBubbleSort.width, canvasBubbleSort.height);
     
     let changed=false;
 
